@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./.cache/tsconfig.node.tsbuildinfo", // 안전한 캐시 경로
+    "target": "ES2022",
+    "lib": ["ES2023"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": false, // .d.ts 파일 출력을 위해 설정
+    "emitDeclarationOnly": true, // 타입 정의 파일만 생성
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+
+    /* Project references */
+    "composite": true, // 프로젝트 참조를 위해 필수
+    "declaration": true, // 타입 정의 파일(.d.ts) 생성
+    "declarationMap": true // 선언 파일의 소스 맵 생성
+  },
+  "include": ["vite.config.ts", "src/**/*"], // 필요한 파일 포함
+  "exclude": ["node_modules", "build"] // 불필요한 파일 제외
+}

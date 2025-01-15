@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./.cache/tsconfig.node.tsbuildinfo",
+    "target": "ES2022",
+    "lib": ["ES2023"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "allowJs": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": false,
+    "emitDeclarationOnly": true,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+
+    /* JSX */
+    "jsx": "react-jsx", // JSX 지원
+
+    /* Project references */
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+
+
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "@screens/*": ["src/screens/*"],
+      "@core/*": ["src/core/*"],
+      "@type/*": ["src/type/*"],
+      "@image/*": ["src/image/*"],
+    }
+  },
+  "include": ["vite.config.ts", "src/**/*"],
+  "exclude": ["node_modules", "build"]
+}
