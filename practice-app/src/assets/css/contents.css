@@ -131,3 +131,16 @@ nav .nav-btn:active {
   font-weight: 700;
   color: #ee0000;
 }
+
+[class*=indent-][class*="-1"] {
+  text-indent: 12px;
+}
+[class*=indent-][class*="-2"] {
+  text-indent: 24px;
+}
+[class*=indent-][class*="-3"] {
+  text-indent: 36px;
+}
+[class*=indent-][class*="-4"] {
+  text-indent: 48px;
+}

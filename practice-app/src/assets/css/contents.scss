@@ -121,3 +121,18 @@ nav {
         color:#ee0000;
     }
 }
+
+[class*="indent-"]{
+    &[class*="-1"]{
+        text-indent:12px;
+    }
+    &[class*="-2"]{
+        text-indent:24px;
+    }
+    &[class*="-3"]{
+        text-indent:36px;
+    }
+    &[class*="-4"]{
+        text-indent:48px;
+    }
+}

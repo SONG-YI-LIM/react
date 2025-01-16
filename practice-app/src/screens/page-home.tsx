@@ -64,6 +64,35 @@ export const PageHome = () =>{
                             <p>{"<img src={URL_KEY + '/img/happy-mooljjange-removebg-preview.png'} alt=''/>"}</p>
                             </div>
                     </li>
+                    <li>
+                        대부분의 데이터는 prop으로 값을 받아와 가공/출력한다.<br/>
+                        컴포넌트 작성 시 데이터를 받아와 출력하는 양식을 고려하여 마크업하는 편이 좋다.
+                        <div className="example">
+                            <p>const sampleData = {'['}</p>
+                            <p className="indent-1">{'{fruit : "apple"},'}</p>
+                            <p className="indent-1">{'{fruit : "banana"},'}</p>
+                            <p className="indent-1">{'{fruit : "lemon"},'}</p>
+                            <p className="indent-1">{'{fruit : "grape"},'}</p>
+                            <p>{']'}</p>
+                            <br />
+                            <p>export const FruitComponent = (fruit : string) = &gt; &#123;</p>
+                            <p className="indent-1">return (</p>
+                            <p className="indent-2">{'<div>'}</p>
+                            <p className="indent-3">{'sampleData.map((fruit, idx)=> ('}</p>
+                            <p className="indent-4 cBlue">{'<p key={idx}>{fruit}</p>'}</p>
+                            <p className="indent-3">{'))'}</p>
+                            <p className="indent-2">{'</div>'}</p>
+                            <p className="indent-1">)</p>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <p className="cGray">// 결과</p>
+                            <p>apple</p>
+                            <p>banana</p>
+                            <p>lemon</p>
+                            <p>grape</p>
+                        </div>
+                    </li>
                 </ol>
             </div>
         </div>
