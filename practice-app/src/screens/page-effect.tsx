@@ -1,13 +1,14 @@
 import React from 'react';
 import {useState, useEffect, useRef} from 'react';
 
-export const Sample = () =>{
+export const PageEffect = () =>{
     const _btn = useRef<HTMLButtonElement | null>(null);
     const [sample, setSample] = useState(0);
 
     return(
-        <div className="contents">
-            
+        <div>
+            <p>Sample</p>
+            <button type="button" ref={_btn} onClick={()=>{setSample(sample + 1)}}>Click me : <span>{sample}</span></button>
         </div>
     )
 }
