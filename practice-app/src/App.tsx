@@ -1,4 +1,3 @@
-import './lsy.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './assets/css/styles.css'
 import {PageHome, PageState, PageEffect, PageRef, Gnb} from '@/screens';

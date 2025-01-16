@@ -40,7 +40,8 @@ nav {
   padding: 24px;
   box-sizing: border-box;
   background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
 }
 nav .wrap {
   display: flex;
@@ -70,7 +71,8 @@ nav .nav-btn:active {
   justify-content: flex-start;
   padding: 4px;
   background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
   box-sizing: border-box;
 }
 
