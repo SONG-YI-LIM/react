@@ -9,6 +9,7 @@ export const Gnb = () =>{
                 <Link className="nav-btn" to="/page-state">useState</Link>
                 <Link className="nav-btn" to="/page-effect">useEffect</Link>
                 <Link className="nav-btn" to="/page-ref">useRef</Link>
+                <Link className="nav-btn" to="/page-practice">practice</Link>
             </div>
         </nav>
     )

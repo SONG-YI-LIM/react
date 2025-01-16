@@ -85,9 +85,11 @@ nav .nav-btn:active {
 }
 
 .contents {
-  width: 1280px;
-  padding: 80px 0 0;
+  padding: 80px 12px 0;
   margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+  box-sizing: border-box;
 }
 .contents .cont-title {
   font-size: 24px;
@@ -143,4 +145,27 @@ nav .nav-btn:active {
 }
 [class*=indent-][class*="-4"] {
   text-indent: 48px;
+}
+[class*=indent-][class*="-5"] {
+  text-indent: 60px;
+}
+[class*=indent-][class*="-6"] {
+  text-indent: 72px;
+}
+
+.practice-wrap {
+  padding: 0 0 40px;
+  border-bottom: 1px solid #ddd;
+}
+.practice-wrap .tit {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.practice-wrap .txt {
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.answer-wrap {
+  margin-top: 40px;
 }
