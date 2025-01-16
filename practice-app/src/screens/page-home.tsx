@@ -50,7 +50,20 @@ export const PageHome = () =>{
                             &#125;
                         </div>
                     </li>
-                    <li>return 안에서 텍스트용 등호 또는 중괄호 사용 시 컴포넌트가 오류를 발생시킬 수 있으므로 주의해야 한다.</li>                 
+                    <li>return 안에서 텍스트용 등호 또는 중괄호 사용 시 컴포넌트가 오류를 발생시킬 수 있으므로 주의해야 한다.<br/>
+                        부득이하게 사용해야 할 경우, 아스키 코드를 사용하거나<br/>
+                        <span className="cBlue">{'{" 피자 < 치킨 "}'}</span> 처럼 변수 내 등호, 중괄호를 string 타입으로 만들어 사용한다.
+                    </li>                 
+                    <li>이미지는 public 폴더에 image 폴더를 생성해서 사용할 경우 별도의 작업 없이 연결해 사용할 수 있다.
+                        <div className="example">
+                            <p className="cGray">// react에서 사용하는 환경변수</p>
+                            <p>const <span className="cBlue">URL_KEY</span> = process.env.PUBLIC_URL;</p>
+                            <p>.</p>
+                            <p>.</p>
+                            <p>.</p>
+                            <p>{"<img src={URL_KEY + '/img/happy-mooljjange-removebg-preview.png'} alt=''/>"}</p>
+                            </div>
+                    </li>
                 </ol>
             </div>
         </div>
