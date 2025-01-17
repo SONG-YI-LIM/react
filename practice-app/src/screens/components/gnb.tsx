@@ -7,6 +7,7 @@ export const Gnb = () =>{
             <div className="wrap">
                 <Link className="nav-btn" to="/">Home</Link>
                 <Link className="nav-btn" to="/page-styled">Style components</Link>
+                <Link className="nav-btn" to="/page-barrel">Barrel</Link>
                 <Link className="nav-btn" to="/page-state">useState</Link>
                 <Link className="nav-btn" to="/page-effect">useEffect</Link>
                 <Link className="nav-btn" to="/page-ref">useRef</Link>

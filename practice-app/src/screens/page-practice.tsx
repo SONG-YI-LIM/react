@@ -1,6 +1,6 @@
 import React from 'react';
 import {useState, useEffect, useRef} from 'react';
-import {CompAnswer01, CompAnswer02} from '@/screens'
+import {CompAnswer01, CompAnswer02, CompAnswer03} from '@/screens'
 
 export const PagePractice = () =>{
 
@@ -20,6 +20,18 @@ export const PagePractice = () =>{
                 <p className="txt">답변 : </p>
                 {/* 이 위치에 컴포넌트를 마운트 */}
                 <CompAnswer02 />
+            </div>
+
+            <div className="practice-wrap">
+                <h5 className="tit">문제 3</h5>
+                <p className="txt">
+                    1. Card라는 컴포넌트를 생성하세요.<br/>
+                    2. title(제목)과 description(설명)을 props로 받아 화면에 표시하세요.<br/>
+                    3. 배경색은 lightgray, 패딩은 20px으로 스타일링하세요.
+                </p>
+                <p className="txt">답변 : </p>
+                {/* 이 위치에 컴포넌트를 마운트 */}
+                <CompAnswer03 />
             </div>
         </div>
     )
