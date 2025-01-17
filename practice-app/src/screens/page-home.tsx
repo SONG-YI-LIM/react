@@ -1,6 +1,13 @@
 import React from 'react';
 import {useState, useEffect, useRef} from 'react';
 
+const sampleData = [
+    {fruit : "apple"},
+    {fruit : "banana"},
+    {fruit : "lemon"},
+    {fruit : "grape"},
+]
+
 export const PageHome = () =>{
 
     return(
@@ -103,18 +110,15 @@ export const PageHome = () =>{
                             <p className="indent-1">return (</p>
                             <p className="indent-2">{'<div>'}</p>
                             <p className="indent-3">{'sampleData.map((fruit, idx)=> ('}</p>
-                            <p className="indent-4 cBlue">{'<p key={idx}>{fruit}</p>'}</p>
+                            <p className="indent-4 cBlue">{'<p key={idx}>{fruit.fruit}</p>'}</p>
                             <p className="indent-3">{'))'}</p>
                             <p className="indent-2">{'</div>'}</p>
                             <p className="indent-1">)</p>
                             <br/>
-                            <br/>
-                            <br/>
                             <p className="cGray">// 결과</p>
-                            <p>apple</p>
-                            <p>banana</p>
-                            <p>lemon</p>
-                            <p>grape</p>
+                            {sampleData.map((txt, idx)=>(
+                                <p key={idx}>{txt.fruit}</p>
+                            ))}
                         </div>
                     </li>
                 </ol>
