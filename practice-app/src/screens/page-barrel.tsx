@@ -41,7 +41,7 @@ export const PageBarrel = () =>{
                         <br/>
                         <br/>
                         <div className="example">
-                            <p>export {'{default as Button}'} from './Button' <span className="cGray">default설정을 함께 써준다.</span></p>
+                            <p>export {'{default as Button}'} from './Button'</p>
                             <p>export {'{default as Header}'} from './Header'</p>
                             <br/>
                             <p>또는</p>
