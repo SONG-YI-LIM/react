@@ -13,7 +13,7 @@ export const PageStyled = () =>{
                             <li>패키지 설치
                                 <div className="example">npm install styled-components</div>
                             </li>
-                            <li>TypeScript를 사용하는 경우, 타입을 추가로 설치해야 합니다:
+                            <li><span className="cRed">TypeScript를 사용하는 경우</span>, 타입을 추가로 설치해야 합니다:
                                 <div className="example">npm install --save-dev @types/styled-components</div>
                             </li>
                             <li>기본 사용법

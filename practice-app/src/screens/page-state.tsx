@@ -25,7 +25,7 @@ export const PageState = () =>{
                     <h5 className="list-tit">상태란?</h5>
                     <ol>
                         <li>상태는 컴포넌트의 동적인 데이터를 저장하고 관리하는 객체입니다.</li>
-                        <li>상태가 변경되면 React는 해당 컴포넌트를 다시 렌더링하여 UI를 업데이트합니다.</li>
+                        <li className='cRed'>상태가 변경되면 React는 해당 컴포넌트를 다시 렌더링하여 UI를 업데이트합니다.</li>
                     </ol>
                 </div>
 

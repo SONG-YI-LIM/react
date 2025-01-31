@@ -51,7 +51,8 @@ export const PageHome = () =>{
             <div className="list-wrap">
                 <ol>
                     <li>
-                        컴포넌트 내부에서 새로운 컴포넌트를 작성하는 것은 지양한다.
+                        유지보수와 활용 측면이 독립적인 컴포넌트보다 떨어지므로<br/>
+                        컴포넌트 내부에서 새로운 컴포넌트를 작성하는 것은 지양한다.                        
                         <div className="example">
                             <p>comp-sample.tsx</p><br/>
                             <p>const InnerComp = () =&gt; &#123;</p>
@@ -88,7 +89,7 @@ export const PageHome = () =>{
                             <p>.</p>
                             <p>.</p>
                             <p>.</p>
-                            <p>{"<img src={URL_KEY + '/img/happy-mooljjange-removebg-preview.png'} alt=''/>"}</p>
+                            <p><span>{"<img src={ "}<span className="cBlue bold">{'URL_KEY'}</span></span><span>{"+ '/img/happy-mooljjange-removebg-preview.png'} alt=''/>"}</span></p>
                             </div>
                     </li>
                 </ol>
@@ -99,21 +100,17 @@ export const PageHome = () =>{
                         대부분의 데이터는 prop으로 값을 받아와 가공/출력한다.<br/>
                         컴포넌트 작성 시 데이터를 받아와 출력하는 양식을 고려하여 마크업하는 편이 좋다.
                         <div className="example">
-                            <p>const sampleData = {'['}</p>
-                            <p className="indent-1">{'{fruit : "apple"},'}</p>
-                            <p className="indent-1">{'{fruit : "banana"},'}</p>
-                            <p className="indent-1">{'{fruit : "lemon"},'}</p>
-                            <p className="indent-1">{'{fruit : "grape"},'}</p>
-                            <p>{']'}</p>
-                            <br />
-                            <p>export const FruitComponent = (fruit : string) = &gt; &#123;</p>
+                            <p>{"export const FruitComponent = (fruit : string) => {"}</p>
                             <p className="indent-1">return (</p>
                             <p className="indent-2">{'<div>'}</p>
-                            <p className="indent-3">{'sampleData.map((fruit, idx)=> ('}</p>
-                            <p className="indent-4 cBlue">{'<p key={idx}>{fruit.fruit}</p>'}</p>
-                            <p className="indent-3">{'))'}</p>
+                            <p className="indent-3 cBlue">{'<p key={idx}>{fruit.fruit}</p>'}</p>
                             <p className="indent-2">{'</div>'}</p>
                             <p className="indent-1">)</p>
+                            <br/>
+                            <p className="cCompEx">{"<FruitComponent fruit={'apple'}/>"}</p>
+                            <p className="cCompEx">{"<FruitComponent fruit={'banana'}/>"}</p>
+                            <p className="cCompEx">{"<FruitComponent fruit={'lemon'}/>"}</p>
+                            <p className="cCompEx">{"<FruitComponent fruit={'grape'}/>"}</p>
                             <br/>
                             <p className="cGray">// 결과</p>
                             {sampleData.map((txt, idx)=>(
