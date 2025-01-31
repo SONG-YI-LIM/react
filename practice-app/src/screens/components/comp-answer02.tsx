@@ -3,13 +3,13 @@ import {useState, useEffect, useRef} from 'react';
 import styled from 'styled-components';
 
 interface Props{
-    color:string;
+    $color:string;
 }
 
 const ColorBox = styled.div<Props>`
     width:100px;
     height:100px;
-    background-color: ${(props) => (props.color)};
+    background-color: ${(props) => (props.$color)};
 `;
 
 export const CompAnswer02 = () =>{
@@ -20,7 +20,7 @@ export const CompAnswer02 = () =>{
             <button className="btn" onClick={()=>{setToggle(!toggle)}}>답변 보기</button>
             {toggle ? (
                 <div className="answer-wrap">
-                    <ColorBox color={'blue'} />
+                    <ColorBox $color={'blue'} />
                     <div className="example">
                         <p className="cGray">// 스타일 컴포넌트 연결</p>
                         <p>import styled from 'styled-components';</p>
